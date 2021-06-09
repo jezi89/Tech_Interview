@@ -1,0 +1,24 @@
+{
+  "name": "royal-kingdom-colchis-jer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "nodemon src/index.js",
+    "watch": "live-server src/ --no-css-inject & nodemon --watch 'src/**/*.html' -e html --exec 'yarn build:css'",
+    "build:css": "postcss src/index.css -o src/build/index.css"
+  },
+  "dependencies": {
+    "autoprefixer": "9.8.6",
+    "emmet": "2.3.4",
+    "express": "4.17.1",
+    "live-server": "1.2.1",
+    "path": "0.12.7",
+    "postcss-cli": "7.1.1",
+    "tailwindcss": "2.0.1-compat"
+  },
+  "devDependencies": {
+    "nodemon": "1.18.4"
+  },
+  "keywords": []
+}

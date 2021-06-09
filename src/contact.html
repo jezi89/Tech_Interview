@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="/build/index.css" />
+    <title>Contact Page</title>
+  </head>
+  <body class="antialiased bg-gray-100">
+    <!-- NAVBAR COMPONENT -->
+    <header
+      class="lg:px-16 px-6 bg-white flex flex-wrap items-center lg:py-o py-2"
+    >
+      <div class="flex-1 flex justify-between items-center">
+        <a href="index.html" target="_self">
+            <img src="assets/img/logo_small.png" width="60" height="60"></img>
+        </a>
+      </div>
+        <label for ="menu-toggle" class="fill-current text-gray-800 cursor-pointer lg:hidden block">
+            <svg viewBox="0 0 100 80" width="40" height="40">
+                <rect width="100" height="20"></rect>
+                <rect y="30" width="100" height="20"></rect>
+                <rect y="60" width="100" height="20"></rect>
+              </svg>
+        </label>
+        <input type="checkbox" class="hidden" id="menu-toggle" />
+
+        <div class="hidden lg:flex lg:items-center lg:w-auto w-full" id="menu">
+          <nav>
+            <ul class="lg:flex items-center justify-between text-base text-gray-800 pt-4 lg:pt-0">
+              <li>
+                <a href="index.html" class="a-jer">Home</a>
+              </li>
+              <li>
+                  <a href="royal-family.html" class="a-jer">Royal Family</a>
+                </li>
+                <li>
+                    <a href="assets.html" class="a-jer">Royal Assets</a>
+                  </li>
+                  <li>
+                      <a href="contact.html" class="a-jer">Contact Us</a>
+                    </li>
+                  </ul>
+          </nav>
+        </div>
+      </div> 
+    </header>
+    <div class="lg:flex lg:items-center lg:justify-start my-4 mx-2">
+        <div class="flex-1 min-w-0">
+          <h6 class="text-2xl font-bold leading-7 text-gray-900 sm:text-3xl sm:truncate">
+            Contact the Royal Kingdom
+          </h6>
+        </div>
+      </div>
+      <div id="form-main">
+          <div id="form-div">
+            <form class="form" id="form1">
+              
+              <p class="name">
+                <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" id="name" />
+              </p>
+              
+              <p class="email">
+                <input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email" />
+              </p>
+              
+              <p class="text">
+                <textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Comment"></textarea>
+              </p>
+              
+              
+              <div class="submit">
+                <input type="submit" value="SEND" id="button-blue"/>
+                <div class="ease"></div>
+              </div>
+            </form>
+          </div>
+          </div>
+    <!-- Connect the Javascript file -->
+    <!--script src="script.js"></script>-->
+  </body>
+</html>

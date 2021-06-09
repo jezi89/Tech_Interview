@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i" rel="stylesheet">
+	<link rel="stylesheet" href="/build/index.css">
+	<link rel="shortcut icon" type="image/png" href="img/favicon.png">
+
+  <title>The Royal Family</title>
+  
+</head>
+
+<body class="antialiased bg-indigo-200">
+  <header
+      class="lg:px-16 px-6 bg-white flex flex-wrap items-center lg:py-o py-2"
+    >
+      <div class="flex-1 flex justify-between items-center">
+        <a href="index.html" target="_self">
+            <img src="assets/img/logo_small.png" width="60" height="60"></img>
+        </a>
+      </div>
+        <label for ="menu-toggle" class="fill-current text-gray-800 cursor-pointer lg:hidden block">
+            <svg viewBox="0 0 100 80" width="40" height="40">
+                <rect width="100" height="20"></rect>
+                <rect y="30" width="100" height="20"></rect>
+                <rect y="60" width="100" height="20"></rect>
+              </svg>
+        </label>
+        <input type="checkbox" class="hidden" id="menu-toggle" />
+
+        <div class="hidden lg:flex lg:items-center lg:w-auto w-full" id="menu">
+          <nav>
+            <ul class="lg:flex items-center justify-between text-base text-gray-800 pt-4 lg:pt-0">
+              <li>
+                <a href="index.html" class="a-jer">Home</a>
+              </li>
+              <li>
+                  <a href="royal-family.html" class="a-jer">Royal Family</a>
+                </li>
+                <li>
+                    <a href="assets.html" class="a-jer">Royal Assets</a>
+                  </li>
+                  <li>
+                      <a href="contact.html" class="a-jer">Contact Us</a>
+                    </li>
+                  </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <div class="lg:flex lg:items-center lg:justify-start my-4 mx-2">
+        <div class="flex-1 min-w-0">
+          <h6 class="text-2xl font-bold leading-7 text-gray-900 sm:text-3xl sm:truncate">
+            The Royal Family
+          </h6>
+        </div>
+      </div>
+	<div class="container">
+		<div class="gallery">
+			<figure class="gallery__item gallery__item--1">
+        <img
+        src="assets/img/king.jpg"
+        alt="King Aethes"
+        width="210"
+        height="312"
+        onclick="myFunction(this); bottomFunction(this);"
+      />
+      <figcaption>King Aethes</figcaption>
+			</figure>
+			<figure class="gallery__item gallery__item--2">
+				<img
+            src="assets/img/princess.jpg"
+            alt="Princess Madeas"
+            width="210"
+            height="312"
+            onclick="myFunction(this); bottomFunction(this);"
+          />
+          <figcaption>Princess Madeas</figcaption>
+			</figure>
+			<figure class="gallery__item gallery__item--3">
+				<img
+            src="assets/img/queen.jpg"
+            alt="Queen Idyia"
+            width="210"
+            height="312"
+            onclick="myFunction(this); bottomFunction(this);"
+          />
+          <figcaption>Queen Idyia</figcaption>
+      </figure>
+    </div>
+   
+    <!-- The expanding image container -->
+    <div class="container" id="container-exp" style="width: 50%">
+      <!-- Close the image -->
+      <span onclick="this.parentElement.style.display='none'" class="closebtn"
+      >&times;</span
+    >
+      <!-- Expanded image -->
+      <img id="expandedImg"/>
+
+      <!-- Image text -->
+      <div id="imgtext" ></div>
+    </div>
+  </div>
+<!-- Connect the Javascript file -->
+<script src="script.js"></script>
+</body>
+
+</html>

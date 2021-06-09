@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="/build/index.css" />
+    <title>Document</title>
+  </head>
+  <body class="antialiased bg-gray-100">
+    <!-- NAVBAR COMPONENT -->
+    <header
+      class="lg:px-16 px-6 bg-white flex flex-wrap items-center lg:py-o py-2"
+    >
+      <div class="flex-1 flex justify-between items-center">
+        <a href="index.html">
+            <img src="assets/img/logo_small.png" width="60" height="60"></img>
+        </a>
+      </div>
+        <label for ="menu-toggle" class="fill-current text-gray-800 cursor-pointer lg:hidden block">
+            <svg viewBox="0 0 100 80" width="40" height="40">
+                <rect width="100" height="20"></rect>
+                <rect y="30" width="100" height="20"></rect>
+                <rect y="60" width="100" height="20"></rect>
+              </svg>
+        </label>
+        <input type="checkbox" class="hidden" id="menu-toggle" />
+
+        <div class="hidden lg:flex lg:items-center lg:w-auto w-full" id="menu">
+          <nav>
+            <ul class="lg:flex items-center justify-between text-base text-gray-800 pt-4 lg:pt-0">
+              <li>
+                <a href="#index.html" class="a-jer">Home</a>
+              </li>
+              <li>
+                  <a href="royal-family.html" class="a-jer">Royal Family</a>
+                </li>
+                <li>
+                    <a href="assets.html" class="a-jer">Royal Assets</a>
+                  </li>
+                  <li>
+                      <a href="contact.html" class="a-jer">Contact Us</a>
+                    </li>
+                  </ul>
+          </nav>
+        </div>
+      </div> 
+    </header>
+    <!-- HERO -->
+    <div class="flex bg-hero-pattern py-48 justify-center">
+      <div class="p-12 text-center max-w-2xl"/> 
+        <div class="text-white md:text-4xl text-4xl bg-yellow-800 bg-opacity-75 p-2" style="font-family: 'Merriweather Sans', sans-serif;">
+          Welcome to</br> the Royal Kingdom of Colchis
+        </div>
+        <div class="text-xl mt-2">
+        </div>
+        <div class="mt-6 flex justify-center h-12 relative">
+            <form method="get" action="assets.html">
+              <button class="btn-yellow">Check out the Kingdom</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="h-auto bg-gray-200 flex justify-start items-center">
+        <!-- Start of component -->
+        <div class="w-fullbg-white border-2 border-gray-300 p-5 rounded-md tracking-wide shadow-lg">
+           <div id="header" class="flex"> 
+              <img alt="mountain" class="w-45 rounded-md border-2 border-gray-300" src="assets/img/crown.svg" width="200" height="200">
+              <div id="body" class="flex flex-col ml-5">
+                 <h4 id="about" class="text-xl font-semibold mb-2">Home</h4>
+                 <p id="job" class="text-gray-800 mt-2">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                 <div class="flex mt-5">
+                    <img alt="avatar" class="w-6 rounded-full border-2 border-gray-300" src="assets/img/crown.svg" />
+                    <p class="ml-3">Pollux</p>
+                 </div>
+              </div>
+           </div>
+        </div>
+        <!-- End of component -->
+     </div>
+                 
+    <!-- Connect the Javascript file -->
+    <!--script src="script.js"></script>-->
+  </body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Royal Family</title>
+    <style>
+      /* The grid: Four equal columns that floats next to each other */
+      .column {
+        float: left;
+        width: 30%;
+        padding: 10px;
+      }
+
+      /* Style the images inside the grid */
+      .column img {
+        opacity: 0.8;
+        cursor: pointer;
+      }
+
+      .column img:hover {
+        opacity: 1;
+      }
+
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      /* The expanding image container (positioning is needed to position the close button and the text) */
+      .container {
+        position: relative;
+        display: none;
+      }
+
+      /* Expanding image text */
+      #imgtext {
+        position: absolute;
+        bottom: 15px;
+        left: 15px;
+        color: white;
+        font-size: 20px;
+      }
+
+      /* Closable button inside the image */
+      .closebtn {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        color: white;
+        font-size: 35px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- The grid: four columns -->
+    <div class="row">
+      <div class="column">
+        <!--
+        <a
+          target=""
+          href="https://unsplash.com/photos/fh-c6IjyBf4?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink"
+        >
+        -->
+        
+
+          <img
+            src="assets/img/king.jpg"
+            alt="King Aethes"
+            width="140"
+            height="208"
+            onclick="myFunction(this);"
+          />
+        </a>
+      </div>
+      <div class="column">
+        <!--
+        <a
+          target=""
+          href="https://unsplash.com/photos/fh-c6IjyBf4?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink"
+        >
+        -->
+          <img
+            src="assets/img/princess.jpg"
+            alt="Princess Madeas"
+            width="140"
+            height="208"
+            onclick="myFunction(this);"
+          />
+        </a>
+      </div>
+      <div class="column">
+        <!--
+        <a
+          target=""
+          href="https://unsplash.com/photos/fh-c6IjyBf4?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink"
+        >
+        -->
+          <img
+            src="assets/img/queen.jpg"
+            alt="Queen Idyia"
+            width="140"
+            height="208"
+            onclick="myFunction(this);"
+          />
+        </a>
+      </div>
+    </div>
+
+    <!-- The expanding image container -->
+    <div class="container">
+      <!-- Close the image -->
+      <span onclick="this.parentElement.style.display='none'" class="closebtn"
+        >&times;</span
+      >
+
+      <!-- Expanded image -->
+      <img id="expandedImg" style="width: 100%;" />
+
+      <!-- Image text -->
+      <div id="imgtext"></div>
+    </div>
+
+    <!-- Connect the Javascript file -->
+    
+    <script src="script.js"></script>
+  </body>
+</html>
